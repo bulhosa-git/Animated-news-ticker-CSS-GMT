@@ -1,0 +1,40 @@
+.pre-header {
+	position: relative;
+	height: 25px;
+	z-index: 2;
+	background: #676a52;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: background-color 300ms ease-in-out;
+	-ms-transition: background-color 300ms ease-in-out;
+	transition: background-color 300ms ease-in-out;
+}
+.pre-header:hover {
+	background: #676a52;
+}
+.pre-header span {
+	display: block;
+	line-height: 25.8px;
+	font-size: 12px;
+	color: #fff;
+	letter-spacing: 0.6px;
+	white-space: nowrap;
+} 
+.pre-header span a {
+	display: inline;
+	width: 100%;
+	color: #fff !important;
+	cursor: pointer;
+}
+.pre-header span a b {
+	font-weight: 500;
+}
+.pre-header.msg1 span:first-child {}
+.pre-header.msg2 span:first-child {
+	animation: animaPreHeader2 6s infinite ease-in-out;
+}
+.pre-header.msg3 span:first-child{
+	animation: animaPreHeader3 10s infinite ease-in-out;
+} 
+@keyframes animaPreHeader2{0%{margin-top:0}15%{margin-top:0}25%{margin-top:-25px}50%{margin-top:-25px}65%{margin-top:-25px}75%{margin-top:0}100%{margin-top:0}}@keyframes animaPreHeader3{0%{margin-top:0}12%{margin-top:0}16%{margin-top:-25px}34%{margin-top:-25px}38%{margin-top:-50px}62%{margin-top:-50px}66%{margin-top:-25px}84%{margin-top:-25px}88%{margin-top:0}100%{margin-top:0}}
